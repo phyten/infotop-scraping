@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Infotop::Scraping::VERSION
   spec.authors       = ["phyten"]
   spec.email         = ["phyten.obr@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "infotopのスクレイピングを行います。"
+  spec.summary       = "infotop scraping"
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,18 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+
+  spec.add_dependency 'activesupport', ['>= 3.0.0']
+  spec.add_dependency 'actionpack', ['>= 3.0.0']
+  spec.add_dependency 'moji'
+  spec.add_dependency 'feed-normalizer'
+  spec.add_dependency 'mechanize'
+  spec.add_dependency 'scraper'
+
+  spec.add_development_dependency 'bundler', ['>= 1.0.0']
+  spec.add_development_dependency 'rake', ['>= 0']
+  spec.add_development_dependency 'rspec', ['>= 0']
+  spec.add_development_dependency 'rdoc', ['>= 0']
+  spec.add_development_dependency 'pry'
+
 end
